@@ -125,6 +125,7 @@ jobs:
         env:
           SERVICES: ec2
           DEBUG: 0
+          LOCALSTACK_AUTH_TOKEN: ${{ secrets.LOCALSTACK_AUTH_TOKEN }}
 
     steps:
       - name: Checkout
